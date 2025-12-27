@@ -1,0 +1,65 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.city-name, .error-display{
+    font-size: 2rem;
+}
+.temp{
+    font-size:25px;
+}
+.humidity{
+    font-size: 20px;
+}
+.weather-type{
+    font-size: 28px;
+    font-style: italic;
+}
+.weather-emoji{
+    font-size: 50px;
+}
+
+.user-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap:10px;
+
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    border: solid rgb(196, 193, 193);
+}
+
+button{
+    padding: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color:rgb(18, 154, 56);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.2s;
+    border: none;
+}
+button:hover{
+    background-color:rgb(64, 212, 35);
+    transition: background-color 0.2s;
+}
+
+.weather-details{
+    position: absolute;
+    top:20%;
+    left:37%;
+    border: none;
+    height: 400px;
+    width: 320px;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(180deg, rgb(127, 186, 253), rgb(252, 216, 139));
+    box-shadow: 1px 1px 10px rgb(128, 128, 128);
+}
