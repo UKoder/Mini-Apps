@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Stack Sans Notch", sans-serif;
+}
+
+body{
+    background-color: rgb(45, 8, 87);
+    color: white;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.start{
+    color: rgb(45, 8, 87);
+    background-color: aliceblue;
+    height: 50px;
+    width: 100px;
+    padding:10px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+.start:hover{
+    background-color: black;
+    opacity: 1;
+    color: aliceblue;
+    transition: 0.25s;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    border: 2px solid;
+    border-radius: 50px;
+    background-color: aliceblue;
+    color: rgb(45, 8, 87);
+    padding: 50px;
+}
+
+#answers{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+#answers button{
+    height: 50px;
+    width:auto;
+    cursor: pointer;;
+    border: 2px solid rgb(214, 214, 215);
+    background-color: aliceblue;
+    transition: 0.25s;
+    border-radius: 10px;
+}
+
+#answers button:hover{
+    background-color: rgb(45, 8, 87);
+    color: aliceblue;
+    border-color: rgb(45, 8, 87);
+    transform: scale(1.1);
+    transition: 0.25s;
+}
