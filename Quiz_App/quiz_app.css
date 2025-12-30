@@ -59,7 +59,7 @@ body{
 #answers button{
     height: 50px;
     width:auto;
-    cursor: pointer;;
+    cursor: pointer;
     border: 2px solid rgb(214, 214, 215);
     background-color: aliceblue;
     transition: 0.25s;
@@ -67,8 +67,7 @@ body{
 }
 
 #answers button:hover{
-    background-color: rgb(45, 8, 87);
-    color: aliceblue;
+    color: rgb(45, 8, 87);
     border-color: rgb(45, 8, 87);
     transform: scale(1.1);
     transition: 0.25s;

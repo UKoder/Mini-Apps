@@ -80,18 +80,34 @@ function dispQuesAns(){
 
 optionsButton.forEach((opt)=>{
     opt.addEventListener("click",()=>{
-        resetInterval();
-        resetTimer();
+        setTimeout(()=>{
+            resetInterval();
+            resetTimer();
+            dispQuesAns();
+            resetOptionStyles();
+        },1000)
         checkResult(opt);
-        dispQuesAns();
     });
 })
 
 function checkResult(opt){
     if (opt.innerHTML === ansKey[i-1]){
         score=score+1;
-        console.log(score);
+        opt.style.backgroundColor = "green";
+        opt.style.borderColor = "green";
     }
+    else {
+        opt.style.backgroundColor = "red";
+        opt.style.borderColor = "red";
+    }
+}
+
+function resetOptionStyles(){
+    optionsButton.forEach(opt=>{
+        opt.style.backgroundColor = "aliceblue";
+        opt.style.borderColor = "rgb(214, 214, 215)";
+        opt.style.color = "rgb(45, 8, 87)";
+    })
 }
 
 function dispResult(score){
