@@ -1,0 +1,98 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.js-todo,
+.todo-head {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  row-gap: 20px;
+  align-items: center;
+  column-gap: 20px;
+  justify-content: center;
+}
+
+.heading {
+  display: grid;
+  justify-content: center;
+}
+
+.todo-head {
+  margin-bottom: 20px;
+}
+
+.js-delBtn {
+  background-color: rgb(192, 4, 4);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+}
+
+.js-addBtn {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.js-addBtn:hover {
+  box-shadow: 2px 2px 10px lightgreen;
+}
+
+.js-delBtn:hover {
+  box-shadow: 2px 2px 10px rgb(245, 23, 23);
+}
+
+.js-todo-input:focus {
+  outline: none;
+  box-shadow: 1px 1px 5px #1e06f4;
+}
+
+.js-todo-input {
+  padding: 10px;
+}
+
+.js-dueDate {
+  padding: 10px;
+}
+
+@media (max-width: 505px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .js-todo,
+  .todo-head {
+    display: grid;
+    grid-template-columns: 150px 100px 70px;
+    row-gap: 20px;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: center;
+  }
+
+  .js-dueDate {
+    font-size: 10px;
+  }
+}
+@media (max-width: 370px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .js-todo,
+  .todo-head {
+    display: grid;
+    grid-template-columns: 80px 100px 70px;
+    row-gap: 20px;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: center;
+  }
+
+  .js-dueDate {
+    font-size: 8px;
+  }
+}
