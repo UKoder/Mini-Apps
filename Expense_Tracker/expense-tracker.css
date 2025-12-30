@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(227, 222, 222);
+    font-family: "Roboto Mono", monospace;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+label{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+select,input{
+    height: 70px;
+    width: 140px;
+    padding: 20px;
+    border: none;
+}
+
+input{
+    border-radius: 50px;
+}
+
+#submit{
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    transition: 0.2s;
+    border-radius: 25px;
+}
+
+#submit:hover{
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+    transition: 0.25s;
+    box-shadow: 5px 5px 10px;
+}
+
+.input-section {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.disp-section{
+    margin: 50px;
+}
+
+
+table{
+    width: 100%;
+    border: solid;
+    border-collapse: collapse;
+}
+thead{
+    height: 30px;
+}
+tbody{
+    text-align: center;
+    border: solid;
+}
+tr{
+    height: 50px;
+}
+tfoot{
+    text-align: center;
+    height: 30px;
+    font-weight: bold;
+}
+th{
+    width: 25%;
+    border: solid;
+}
+td{
+    border: solid;
+}
+
+.del-btn{
+    background-color: rgb(205, 2, 2);
+    height: 30px;
+    width:60px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    transition: 0.2s;
+}
+.del-btn:hover{
+    transform: scale(1.05);
+    background-color: red;
+    transition: 0.2s;
+}

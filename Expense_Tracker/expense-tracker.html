@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expense-tracker.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+    <h1>Expense Tracker</h1>
+    <div class="input-section">
+        <label for="category">Category:
+            <select name="categories" id="categories-select">
+                <option value="House-Rent">House Rent</option>
+                <option value="College-Fees">College Fees</option>
+                <option value="EMIs">EMIs</option>
+                <option value="Repairs">Repairs</option>
+                <option value="Trips">Trips</option>
+            </select>
+        </label>
+        <label for="amount">Amount:
+            <input type="Number" name="amount" id="amount-input">
+        </label>
+        <label for="date">Date:
+            <input type="date" name="date" id="date-input">
+        </label>
+        <button id="submit">Submit</button>
+    </div>
+    <h1>Expense List</h1>
+    <div class="disp-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody style="display:none;">
+            </tbody>
+            <tfoot id="total-amount">
+                <tr>
+                    <td>Total:</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+<script src="expense-tracker.js"></script>
+
+</html>
